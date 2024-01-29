@@ -30,9 +30,9 @@ public class PlayerMovment : MonoBehaviour
         {
             transform.localPosition = new Vector3(-20.09f, -4.56f, 0);
         }
-        if (transform.position.x >= 20.45f)
+        if (transform.position.x >= 9.74f)
         {
-            transform.localPosition = new Vector3(20.45f, -4.56f, 0);
+            transform.localPosition = new Vector3(9.74f, -4.56f, 0);
         }
         if (direction != 0)
         {
