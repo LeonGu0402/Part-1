@@ -5,12 +5,12 @@ using UnityEngine;
 public class Missile : MonoBehaviour
 {
     public float speed = 10f;
-    Rigidbody2D rigidbody;
+    Rigidbody2D rb;
     Vector2 direction = new Vector2(10, 0);
     // Start is called before the first frame update
     void Start()
     {
-        rigidbody = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -21,7 +21,7 @@ public class Missile : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rigidbody.MovePosition(rigidbody.position + direction * Time.deltaTime);
+        rb.MovePosition(rb.position + direction * Time.deltaTime);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

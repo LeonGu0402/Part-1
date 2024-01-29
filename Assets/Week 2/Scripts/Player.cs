@@ -6,7 +6,7 @@ public class Player : MonoBehaviour
 {
     Vector2 direction;
     public float force = 150f;
-    public Rigidbody2D rigidbody;
+    public Rigidbody2D rb;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +22,7 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rigidbody.AddForce(direction * force* Time.deltaTime);
+        rb.AddForce(direction * force* Time.deltaTime);
 
     }
 }

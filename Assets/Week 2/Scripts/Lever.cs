@@ -5,11 +5,11 @@ using UnityEngine;
 public class Lever : MonoBehaviour
 {
     public GameObject door;
-    Rigidbody2D rigidbody;
+    Rigidbody2D rb;
     // Start is called before the first frame update
     void Start()
     {
-        rigidbody = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
