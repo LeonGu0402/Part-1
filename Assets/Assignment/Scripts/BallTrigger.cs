@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Launcher : MonoBehaviour
+public class BallTrigger : MonoBehaviour
 {
-    public GameObject missilePrefab;
-    public Transform spawn;
+    public GameObject Ball;
+    public Transform generatePoint;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,8 +18,8 @@ public class Launcher : MonoBehaviour
         
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        Instantiate(missilePrefab, spawn.position, spawn.rotation);
+        Instantiate(Ball, generatePoint.position, generatePoint.rotation);
     }
 }
