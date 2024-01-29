@@ -9,10 +9,17 @@ public class PlayerMovment : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
     }
 
     // Update is called once per frame
     void Update()
+    {
+        movement();
+    }
+
+
+    void movement()
     {
         float move = Input.GetAxis("Horizontal");
         float direction = Input.GetAxisRaw("Horizontal");
@@ -27,12 +34,9 @@ public class PlayerMovment : MonoBehaviour
         {
             transform.localPosition = new Vector3(20.45f, -4.56f, 0);
         }
-
-
         if (direction != 0)
         {
             transform.localScale = new Vector3(direction, 1, 1);
         }
     }
-
 }

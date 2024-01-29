@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4396616616633680092}
   - component: {fileID: 970514282120017136}
   - component: {fileID: 6433814113326351628}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,7 +98,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 20
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
